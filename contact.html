@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="contact.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">    
+
+    <script src="https://kit.fontawesome.com/aab4d857d1.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!---------------Header Start Here-------------->
+   <div id="contactform">
+        <div class="container">
+            <nav>
+                <!---<a href="about.html" target="_blank">About</a>---->
+                <ul id="sidemenu">
+                    <li><a href="#header"></a></li>
+                    <li><a href="about.html" target="blank">About</a></li>
+                    <li><a href="services.html" target="blank">Services</a></li>
+                <!--    <li><a href="#portfolio">Portfolio</a></li> -->
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <header>
+                <h1>
+                    Contact Me
+                </h1>    
+            </header>    
+
+            <div id="contact" onsubmit="handleSubmit(event)">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="contact-right">
+                            <form action="" class="message">
+                                <input type="text" class="name" name="name" placeholder="Your Name" required>
+                                <input type="email" class="email" name="email" placeholder="Your Email" required>
+                                <textarea name="message" class="text"  rows="6" placeholder="Your Message"></textarea>
+                                <button type="submit" class="btn-1 btn-2">Submit</button>
+                            </form>
+                        </div>
+
+                        <div class="contact-left">
+                            <!--<h1 class="sub-title">Contact Me</h1>--->
+                            <p><i class="fa-solid fa-paper-plane"></i>contactme@example.com</p>
+                            <p><i class="fa-solid fa-square-phone"></i>0816-328-6513</p>
+                            <div class="social-icons">
+                                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="https://www.twitter.com/"><i class="fa-brands fa-square-twitter"></i></a>
+                                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                            <form class="photo">
+                                <label>Send a photo to be used as your online icon <em>(optional)</em><br>
+                                <input type="file" name="photo"></label>     
+                            </form>
+                            <a href="images/GOMINA FEMI ONIMISI CV FOR TECH.pdf" download class="btn-1 btn-2">Download CV</a>
+                        </div>
+                        
+                    </div>
+                </div>
+<script>
+        document.getElementById('contact').addEventListener('submit', function handleSubmit(event) {
+            event.preventDefault();
+            let name = 
+            document.getElementByClassName('name').value;
+            let email = 
+            document.getElementByClassName('email').value;
+            let message = 
+            document.getElementByClassName('text').value;
+
+            if (name && email && message) {
+                alert('Thank you for your message!');
+
+            document.getElementById('contact').reset(
+            );
+
+            } else {
+                alert('Please fill out all fields.');
+            }
+        });
+
+</script>
+</body>
+</html>

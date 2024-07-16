@@ -1,0 +1,189 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /*background: #080808;*/
+  color: #fff;
+}
+
+#contactform {
+  height: 100%;
+
+  width: 100%;
+  background-repeat: no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.94)),
+    url(images/pic.JPG);
+  /*background-size: cover;
+    
+    background-image: url(images/pic.JPG);*/
+
+  background-color: #000;
+  background-blend-mode: normal;
+  background-position: center;
+}
+
+.container {
+  padding: 10px 10%;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3em;
+  color: #fff;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+ul li {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 35px;
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
+
+span {
+  color: #f9004d;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 10px 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.contact-left {
+  flex-basis: 35%;
+}
+
+.contact-right {
+  flex-basis: 60%;
+}
+
+.contact-left p {
+  margin-top: 30px;
+}
+
+.contact-left p i {
+  color: #ff004f;
+  margin-right: 15px;
+  font-size: 25px;
+}
+
+.social-icons {
+  margin-top: 30px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: #ababab;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+  color: #ff004f;
+  transform: translateY(-5px);
+}
+
+.btn-1.btn-2 {
+  display: inline-block;
+  background: #ff004f;
+}
+
+.photo {
+  margin-bottom: 5px;
+}
+
+.contact-right .message {
+  width: 100%;
+}
+
+.message input,
+.message textarea {
+  width: 100%;
+  border: 0;
+  display: block;
+  outline: none;
+  background: #262626;
+  padding: 15px;
+  margin: 15px 0;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+.message .btn-2 {
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 30px;
+  outline: none;
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background: #262626;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+.copyright i {
+  color: #ff004f;
+}

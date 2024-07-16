@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+    /*background: #080808;*/
+    color: #fff;
+}
+
+#header{
+    height: 100%;
+    
+    width: 100%;
+    background-repeat: no-repeat;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.94)),
+    url(images/pic.JPG);
+    /*background-size: cover;
+    
+    background-image: url(images/pic.JPG);*/
+     
+    background-color: #000;
+    background-blend-mode:normal;
+    background-position: center;
+}
+
+.container{
+    padding: 10px 10%;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1{
+    margin: 0;
+    font-size: 3em;
+    color: #fff;
+}
+
+section{
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #fff;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.data{
+    margin-top: 20px;
+}
+
+span{
+    color: #f9004d;
+    font-size: 80px;
+}
+
+section, .intro, p{
+    font-size: 1.5em;
+    line-height: 1.6;
+    color: #fff;
+}
+
+section, .intro, p, h1{
+    display: inline-block;
+}
+
+ul{
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li{
+    font-size: 1em;
+    line-height: 1.6;
+    color: #fff;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.logo{
+    font-size: 35px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+span{
+    color: #f9004d;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 10px 20px;
+    
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
